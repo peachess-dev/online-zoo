@@ -112,13 +112,6 @@ button {
 }
 
 
-
-footer {
-    height: 443px;
-    background: black;
-}
-
-
 /* TWO SECTION */
 
 .two {
@@ -482,4 +475,64 @@ figcaption {
     height: 5px;
     background-color: orange;
     border-radius: 20px;
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 10em;
+    background: black;
+    gap: 3em;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo {
+    color: white;
+}
+
+.form__h2 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.icons {
+    color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .2em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.icons > * {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.footer__credits {
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.footer__btn {
+    border-radius: 5px;
 }
