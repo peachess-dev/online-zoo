@@ -9,7 +9,7 @@ body {
 }
 
 .one {
-    background: url("/assets/images/giant_panda.jpg") no-repeat;
+    background: url("../../assets/images/giant_panda.jpg") no-repeat;
     background-size: cover;    
     height: 780px;
 }
