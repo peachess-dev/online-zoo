@@ -1,95 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
+    width: 1600px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 1600px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.one {
-    background: url("../../assets/images/giant_panda.jpg") no-repeat;
-    background-size: cover;    
-    height: 780px;
-}
-
-nav {
-    background: black;    
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-nav ul {
+    box-sizing: border-box;        
     display: flex;
-    gap: 58px;
+    flex-direction: column; 
+    font-family: 'Roboto', sans-serif;    
 }
 
-nav ul li {
-    list-style: none;    
-}
 
-nav ul li a {
+a {
     text-decoration: none;
-    color: white;
+    color: #FFF;
 }
 
-.nav__logo {
-    margin-left: 220px;
+a:visited {
+    color: #FFF;
 }
 
-.nav__menu {
-    margin-left: 63px;
-}
-
-.nav__credits {
-    margin-left: 438px;
-}
-
-
-
-.one__content {
-    width: 500px;
-    height: 400px;
-    position: relative;
-    left: 50%;    
-    margin-bottom: 10%;
-}
-
-.one__content_element {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.orange {
-    position: absolute;
-    top: 50px;
-    width: 465px;
-    height: 465px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 50%;    
-}
-
-.white {    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 106.496px;
-    line-height: 75%;    
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    z-index: 9;
-    margin: 1em;
-}
-
-.white span {
-   color: #FFEE2E;
-}
 
 button {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -104,15 +34,102 @@ button {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    position: relative;    
+    position: relative;  
+    cursor: pointer;  
 }
 
-.one__button {
-    left: 70%;
+button:hover {
+    opacity: 0.8;
+}
+
+/********** 
+SECTION ONE 
+**********/
+
+header {
+    display: flex;
+    flex-direction: column;   
+    padding-bottom: 5em;
+    background: url("../../assets/images/giant_panda.jpg") no-repeat;
+    background-size: cover;    
+}
+
+/* navigation */
+
+nav {    
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    background: black;   
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 58px;
+}
+
+nav ul li {
+    list-style: none;    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.about_link {
+    color: orange;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.nav__logo {
+    margin-left: 0;
+}
+
+.nav__menu {
+    margin-left: 0;
+}
+
+.nav__credits {
+    margin-left: 0;
+}
+
+/* header */
+
+.header {
+    display: flex;  
+    flex-basis: content;
+    flex-wrap: wrap;  
+    padding-right: 20em;
+    justify-content: flex-end;
+}
+
+.header__text p {    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;    
+    line-height: 75%;    
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 9;
+    margin: 1em;
+}
+
+.header__text p span {
+   color: #FFEE2E;
 }
 
 
-/* TWO SECTION */
+
+/********** 
+SECTION TWO 
+**********/
 
 .two {
     display: block;
@@ -511,19 +528,34 @@ footer {
     align-items: flex-end;
 }
 
+.footer__bottom > * {
+    padding: 0;
+    margin: 0;
+}
+
 .icons {
     color: #FFF;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: .2em;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
 }
 
-.icons > * {
-    margin-left: 0;
-    padding-right: 0;
+.icons > a {
+    display: flex;    
+    gap: .5em;
+}
+
+.nav__bottom * {
+    padding: 0;
+    margin: 0;
+}
+
+.menu__bottom *{
+    padding: 0;
+    margin: 0;
 }
 
 .footer__credits {
@@ -531,6 +563,11 @@ footer {
     font-weight: 100;
     font-size: 16px;
     line-height: 130%;
+}
+
+.footer__credits * {
+    padding: 0;
+    margin: 0;
 }
 
 .footer__btn {
