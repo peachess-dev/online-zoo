@@ -52,6 +52,7 @@ header {
     padding-bottom: 5em;
     background: url("../../assets/images/giant_panda.jpg") no-repeat;
     background-size: cover;    
+    background-position: -10%;
     
 }
 
@@ -64,22 +65,39 @@ header > * {
 
 nav {    
     display: flex;    
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding: .7em;
+    margin: 0;
     background: black;   
     color: white;
 }
 
-nav ul {
-    display: flex;
-    gap: 58px;
+.nav__logo {
+    width: 82px;
+    height: 52px;
+    border: .5px solid #fff;
+    padding: .2em;    
 }
 
-nav ul li {
+.nav__logo h1 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.nav__menu {
+    display: flex;    
+    justify-content: space-between;
+    gap: 3em;   
+}
+
+.nav__menu li {
     list-style: none;    
 }
 
-nav ul li a {
+.nav__menu li a {
     text-decoration: none;
     color: white;
 }
@@ -92,30 +110,23 @@ nav a:hover {
     color: orange;
 }
 
-.nav__logo {
-    margin-left: 0;
-}
-
-.nav__menu {
-    margin-left: 0;
-}
-
-.nav__credits {
-    margin-left: 0;
-}
-
 /* header */
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 0;    
+    margin-right: 5.8em;
+    margin-top: -1.5em;
 }
 
 .header__text {
     width: 50%;
-    background: url(../../assets/images/Ellipse\ 6.png) no-repeat center;       
-    background-position: 25%;
+    background: url(../../assets/images/Ellipse\ 6.png);
+    background-repeat: no-repeat;      
+    background-position: 19% 25%;
+
 }
 
 .header__text p {   
@@ -136,6 +147,12 @@ nav a:hover {
 .header__btn {
     position: relative;
     margin-right: 15em;
+    margin-top: -2.5em;    
+    margin-bottom: 1em;    
+}
+
+.header__button {
+    padding: 1em 5em;
 }
 
 /********** 
@@ -144,6 +161,19 @@ SECTION TWO
 
 .two {
     display: block;
+}
+
+.two {
+    background: url(../../assets/images/flower.png), 
+    url(../../assets/images/palm.png), 
+    url(../../assets/images/strelitza.png); 
+    background-repeat: no-repeat;
+    background-size: 15%, 40%, 20%;
+    background-position-x: 105%, -45%, right;
+    background-position-y: 1%, 110%, bottom;
+    
+   
+    
 }
 
 .backstage {    
