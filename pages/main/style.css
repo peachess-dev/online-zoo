@@ -74,16 +74,20 @@ nav {
 }
 
 .nav__logo {
+    display: flex;
+    align-items: center;
     width: 82px;
     height: 52px;
-    border: .5px solid #fff;
-    padding: .2em;    
+    border: .5px solid #fff;    
+    background: url(../../assets/images/bamboo.svg) no-repeat;    
+    background-position: 17% 65%;
 }
 
 .nav__logo h1 {
     font-weight: 400;
     font-size: 1.2rem;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -137,7 +141,7 @@ nav a:hover {
     text-transform: uppercase;
     color: #FFFFFF;    
     margin: 1em;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 1px 1px grey;
 }
 
 .header__text p span {
