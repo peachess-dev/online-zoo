@@ -52,6 +52,12 @@ header {
     padding-bottom: 5em;
     background: url("../../assets/images/giant_panda.jpg") no-repeat;
     background-size: cover;    
+    
+}
+
+header > * {
+    margin: 0;
+    padding: 0;
 }
 
 /* navigation */
@@ -101,31 +107,36 @@ nav a:hover {
 /* header */
 
 .header {
-    display: flex;  
-    flex-basis: content;
-    flex-wrap: wrap;  
-    padding-right: 20em;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.header__text p {    
-    font-family: 'Roboto';
-    font-style: normal;
+.header__text {
+    width: 50%;
+    background: url(../../assets/images/Ellipse\ 6.png) no-repeat center;       
+    background-position: 25%;
+}
+
+.header__text p {   
     font-weight: 700;
     font-size: 106.496px;    
-    line-height: 75%;    
+    line-height: 75%;   
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    z-index: 9;
+    color: #FFFFFF;    
     margin: 1em;
+    text-shadow: 1px 1px #000000;
 }
 
 .header__text p span {
    color: #FFEE2E;
 }
 
-
+.header__btn {
+    position: relative;
+    margin-right: 15em;
+}
 
 /********** 
 SECTION TWO 
