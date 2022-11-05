@@ -226,16 +226,51 @@ SECTION TWO
 .two {
     display: flex;
     flex-direction: column;
+    align-items: center;    
+}
+
+
+
+.pets__container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 10em 0 0;
+    gap: .5em;
+}
+
+.arrows img {
+    background: orange;
+    padding: 2em;
+    border-radius: 50%;   
+}
+
+.arrows:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.left {
+    order: 1;  
+    margin-left: 5em;
+}
+
+.pets {
+    order: 2;
+}
+
+.right {
+    order: 3;
+    margin-right: 5em;  
 }
 
 .pets {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: center; 
-    padding: 10em 10em 0;
-    margin: 0 auto;    
-    gap: 5em;
+    justify-content: center;          
+    gap: 5em;     
+    margin-left: -5em;
+    margin-right: -5em;
 }
 
 .pets__cards {
@@ -250,10 +285,16 @@ SECTION TWO
     height: 366px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .pets__image img {
     width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.pets__image:hover img {
+    transform: scale(1.1);
 }
 
 figcaption {
@@ -336,6 +377,10 @@ figcaption {
     margin: 0;
     padding-left: 99px;
     margin-bottom: 1em;    
+}
+
+.friend p a {
+    color: orange; 
 }
 
 .friend .p1 {
@@ -564,7 +609,7 @@ footer {
     color: #FFF;
     font-weight: 400;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 120%;    
 }
 
 .footer__bottom {
@@ -617,4 +662,12 @@ footer {
 
 .footer__btn {
     border-radius: 5px;
+}
+
+.nav__logo h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
