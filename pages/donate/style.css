@@ -306,6 +306,12 @@ label {
     margin-top: .3em;
 }
 
+.form_text p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 /*
 
 
