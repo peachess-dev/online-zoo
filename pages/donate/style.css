@@ -435,8 +435,9 @@ footer {
     align-items: flex-start;
 }
 
-.footer__top .footer__logo {
+.footer__top .nav__logo {
     color: white;
+    margin-left: 2em;
 }
 
 .footer__top .nav__logo h2 {
@@ -449,17 +450,31 @@ footer {
 
 .footer__top .form {
     display: flex;
-    flex-direction: column;
-    gap: 1px;
+    flex-direction: column;   
+    gap: 1px;   
 }
 
 .footer__top .form__h2 {
     color: #FFF;
     font-weight: 400;
-    font-size: 24px;      
+    font-size: 24px;    
+    
 }
 
+.footer__top .form #email {
+    background: transparent;
+    border: .1px solid orange;
+    padding: 1em 1em .2em;    
+}
 
+.footer__top .form #submit {
+    background: #FFF;
+    color: #000000;
+    border-radius: 5px;
+    padding: .5em 2em;
+    text-transform: none;
+    
+}
 
 .footer__bottom {
     display: flex;
@@ -476,10 +491,11 @@ footer {
     color: #FFF;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: .2em;
+    gap: .8em;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    margin-left: 2em;
 }
 
 .footer__bottom .icons > a {
@@ -490,6 +506,7 @@ footer {
 .footer__bottom .nav__bottom * {
     padding: 0;
     margin: 0;
+    margin-left: 10em;
 }
 
 .footer__bottom .menu__bottom *{
@@ -502,6 +519,7 @@ footer {
     font-weight: 100;
     font-size: 16px;
     line-height: 130%;
+    margin-right: 2em;
 }
 
 .footer__bottom .footer__credits * {
@@ -509,7 +527,13 @@ footer {
     margin: 0;
 }
 
-.footer__bottom .footer__btn {
-    border-radius: 5px;
+.footer_btn {
+    margin-top: -4rem;
+    margin-left: 2em;
+}
+
+.footer__btn {
+    border-radius: 5px;   
+    padding: 1em 3em; 
 }
 
