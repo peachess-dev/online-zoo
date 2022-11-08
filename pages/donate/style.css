@@ -476,6 +476,7 @@ footer {
     background: transparent;
     border: .1px solid orange;
     padding: 1em 1em .2em;    
+    /*color: #FFF;*/
 }
 
 .footer__top .form #submit {
@@ -483,9 +484,14 @@ footer {
     color: #000000;
     border-radius: 5px;
     padding: .5em 2em;
-    text-transform: none;
-    
+    text-transform: none;    
 }
+
+/*
+.footer__top .form #submit:hover {
+    border: 2px solid orange;
+}
+*/
 
 .footer__bottom {
     display: flex;
@@ -507,6 +513,10 @@ footer {
     font-size: 16px;
     line-height: 140%;
     margin-left: 2em;
+}
+
+.footer__bottom .icons a:hover {
+    color: orange;
 }
 
 .footer__bottom .icons > a {
