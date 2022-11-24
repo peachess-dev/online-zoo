@@ -239,7 +239,7 @@ nav a:hover {
 }
 
 .friend_radiobtn {
-    padding: 0 0 2.2em;    
+    padding: 0;    
     text-align: center;
 }
 
@@ -355,7 +355,7 @@ input[type='radio'] {
 }
 
 .anotheramount input {
-    padding: 1em 2.5em;    
+    padding: 1em 3em;    
     background: transparent;
     border: .5px solid gray;    
 }
@@ -401,7 +401,7 @@ input::-webkit-inner-spin-button {
     border: none;
     border-radius: 25px;
     padding: 1rem 4.5rem;
-    margin: 2rem 1rem .5rem;
+    margin: 1rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -480,15 +480,7 @@ footer {
     background: transparent;
     border: .1px solid orange;
     padding: 1em 1em .2em;    
-    color: #FFF;
-}
-
-.footer__top input[type="email"]:checked {
-    border: 1px solid orange;
-}
-
-.footer__top .form #email:focus {
-    border-color: orange;
+    /*color: #FFF;*/
 }
 
 .footer__top .form #submit {
@@ -499,11 +491,11 @@ footer {
     text-transform: none;    
 }
 
-
+/*
 .footer__top .form #submit:hover {
     border: 2px solid orange;
 }
-
+*/
 
 .footer__bottom {
     display: flex;
