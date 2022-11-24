@@ -438,6 +438,8 @@ footer {
     padding: 2em 12rem;
     background: black;
     gap: 3em;
+    margin-top: -.9em;
+    padding-bottom: 13rem;
 }
 
 .footer__top {
@@ -448,7 +450,8 @@ footer {
 
 .footer__top .nav__logo {
     color: white;
-    margin-left: 2em;
+    margin-left: 1.8em;
+    margin-top: .8em;
 }
 
 .footer__top .nav__logo h2 {
@@ -463,6 +466,7 @@ footer {
     display: flex;
     flex-direction: column;   
     gap: 1px;   
+    
 }
 
 .footer__top .form__h2 {
