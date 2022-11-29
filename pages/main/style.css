@@ -232,7 +232,9 @@ section backstage
 }
 
 .backstage__image img {
-    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .backstage__text {
@@ -253,8 +255,8 @@ section pets
     
     display: grid;  
     align-items: center;
-    grid-template-columns: .5fr 3fr .5fr;
-    padding: 1rem 0em;
+    grid-template-columns: .5fr 2fr 2fr .5fr;
+    padding: 1rem 4rem;
     gap: 1rem;
     
     background: url(../../assets/images/palm_foto.png), 
@@ -268,14 +270,14 @@ section pets
 .pets__row1 {
     display: flex;
     gap: 2rem;
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 1/2;
 }
 
 .pets__row2 {
     display: flex;
     gap: 2rem;
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 2/3;
 }
 
@@ -291,7 +293,7 @@ section pets
 }
 
 .right {
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 1/3;
     align-self: center;
 }
@@ -308,7 +310,7 @@ section pets
 }
 
 .pets__btn {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 3/4;    
     justify-self: center;
     padding: 4.9rem;
@@ -326,15 +328,20 @@ section pets
 }
 
 .pets__cards {
+    width: 22.875rem;
+    
     border: 1px solid #FE9013;
     border-radius: 5px;
     margin: 0;    
     padding: 0;
 }
 
+.pets__cards img {
+    width: 100%;
+}
+
 .pets__image {   
-    width: 22.875rem;
-    height: 22.875rem;;
+    
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -946,26 +953,79 @@ form .submit:hover {
     /*backstage */
 
     .backstage {
-        padding: 9rem 2rem;
+        padding: 6rem 2rem;
         background: none;
+        gap: 4%;
     }
 
-    .pets__image {
+    .backstage__image {
+        width: 100%; 
+    }
+
+    .backstage__image img {
+        height: 100%;
+        object-fit: cover;        
+    }        
+
+    .backstage__text {
+        width: 100%;        
+    }
+
+    .backstage__text h2 {
+        margin-bottom: .5rem;
+        letter-spacing: -.1rem;
+    }
+
+    .backstage__text p:last-of-type(2) {
+        letter-spacing: .01rem;    
+        
+    }
+
+    .backstage__text .last {
+        margin-bottom: 0;
+    }
+
+    /*pets */
+
+    .pets__container {
+        padding: 3rem 2rem;
+    }
+
+    .pets__cards {
         width: 18rem;
         height: 22rem;
     }
 
-    .arrows {        
-        grid-row: 2/3;
+    .pets__image img {
+        width: 100%;
+    }
+   
+
+    .left {
         grid-column: 2/3;
+        grid-row: 2/3;
+        margin-right: 5rem;
+    }
+
+    .right {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin-left: 5rem;
+    }
+
+    .pets__row1 {
+        grid-column: 1/5;
     }
 
     .pets__row2 {
+        grid-column: 1/5;
         grid-row: 3/4;
+        
     }
 
     .pets__btn {
         grid-row: 4/5;
+        margin-top: -.5rem;
     }
 
     .friend {
