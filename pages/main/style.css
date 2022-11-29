@@ -837,8 +837,7 @@ form .submit:hover {
 }
 */
 
-
-
+/*
 @media screen and (min-width: 1000px) and (max-width: 1599px) {
     .container {
         max-width: 1000px;
@@ -852,6 +851,99 @@ form .submit:hover {
     .nav__menu {
         margin-right: 3rem;
     }
+
+    .backstage {
+        padding: 9rem 2rem;
+        background: none;
+    }
+
+    .pets__image {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .arrows {        
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .pets__row2 {
+        grid-row: 3/4;
+    }
+
+    .pets__btn {
+        grid-row: 4/5;
+    }
+
+    .friend {
+        margin: 5rem 2rem 6rem;
+    }
+
+    .cards {
+        margin: 0 2.5rem;
+    }
+
+    .testimonials {
+        padding: 6rem 2rem 11rem;
+    }
+
+    .footer__top, .footer__bottom {
+        margin: 0 2rem;
+    }
+
+    .footer_btn {
+        margin-left: 2rem;
+    }
+}
+*/
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*header */
+   
+
+    /*nav */
+
+    .nav__logo {
+        margin-left: 2rem;
+    }
+
+    .nav__menu {
+        margin-right: 2rem;
+        gap: 3.2rem;
+    }
+
+    /*hero */
+    .hero {
+        background-size: 130%;
+        background-position: 45% 60%;
+        padding-bottom: 3.5rem;
+    }
+
+    .hero__text {
+        padding: 0rem 5rem 1rem;
+        margin-right: 2rem;    
+        
+    }
+
+    .hero__text p {
+        font-size: 5rem;
+    }
+
+    .hero__text p:first-of-type {
+        margin-top: 3.5rem;
+    }
+    .hero__btn {
+        margin-right: 9rem;
+        margin-top: 2rem;
+        
+    }
+
+    /*backstage */
 
     .backstage {
         padding: 9rem 2rem;
@@ -1042,63 +1134,7 @@ form .submit:hover {
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 
-    .nav__logo {
-        margin-left: 3rem;
-    }
-
-    .nav__menu {
-        margin-right: 3rem;
-    }
-
-    .backstage {
-        padding: 9rem 2rem;
-        background: none;
-    }
-
-    .pets__image {
-        width: 18rem;
-        height: 22rem;
-    }
-
-    .arrows {        
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-
-    .pets__row2 {
-        grid-row: 3/4;
-    }
-
-    .pets__btn {
-        grid-row: 4/5;
-    }
-
-    .friend {
-        margin: 5rem 2rem 6rem;
-    }
-
-    .cards {
-        margin: 0 2.5rem;
-    }
-
-    .testimonials {
-        padding: 6rem 2rem 11rem;
-    }
-
-    .footer__top, .footer__bottom {
-        margin: 0 2rem;
-    }
-
-    .footer_btn {
-        margin-left: 2rem;
-    }
-}
 
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
