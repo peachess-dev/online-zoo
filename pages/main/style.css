@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    display: flex;    
-    flex-direction: column; 
     max-width: 1600px;
+    display: flex;    
+    flex-direction: column;     
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;  
@@ -41,6 +41,13 @@ h3 {
     font-size: 1.5rem;
     line-height: 120%;
     color: #333B41;     
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
 }
 
 p {
@@ -85,7 +92,7 @@ nav {
     display: flex;    
     flex-grow: 1;
     align-items: center;
-    padding: 0.8rem 14rem;    
+    padding: 0.8rem 0;    
     gap: 1rem;
     background: black;   
     color: white;   
@@ -94,11 +101,12 @@ nav {
 .nav__logo {
     display: flex;
     align-items: center;
-    width: 5.125rem;
-    height: 3.25rem;
+    width: 5rem;
+    height: 3rem;
     border: .5px solid #fff;    
-    background: url(../../assets/images/bamboo.svg) no-repeat;    
-    background-position: 17% 65%;    
+    background: url("../../assets/images/bamboo.svg") no-repeat;    
+    background-position: 10% 65%;    
+    margin-left: 14rem;
 }
 
 .nav__logo h1 {
@@ -115,6 +123,7 @@ nav {
     flex-grow: 1;       
     margin-left: auto;
     gap: 3.7rem;
+    margin-right: 14rem;
 }
 
 .nav__menu ul {
@@ -144,6 +153,7 @@ nav a:hover {
 
 /* hero */
 
+
 .hero {
     display: flex;    
     flex-direction: column;
@@ -151,30 +161,31 @@ nav a:hover {
     background: url("../../assets/images/giant_panda.jpg") no-repeat;
     background-size: cover;     
     background-position: 0% 60%;    
-    padding-bottom: 4.2rem;
+    padding-bottom: 6.5rem;
     margin: 0;
 }
 
-/*
 .hero__text {
-    width: 50%;
-    background: url(../../assets/images/Ellipse\ 6.png);
-    background-repeat: no-repeat;      
-    background-position: 2% 11%;
+    display: flex;  
+    flex-direction: column;       
+    align-items: center;
+    background: url(../../assets/images/ellipse.png);
+    background-repeat: no-repeat;  
+    background-size: 70%;                
+    background-position: 5% 15%;    
+    margin-right: 10rem;
+    padding: 5rem;    
 }
 
-
-.hero__text p {   
+.hero__text p {
+    margin: 0;   
     font-weight: 700;
-    font-size: 6.6rem;    
-    line-height: 75%;   
-    text-align: center;
+    font-size: 6.5rem;    
+    line-height: 75%;         
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px grey;
     position: relative;
-    top: -.2rem;
-    left: -.7rem;   
 }
 
 .hero__text p span {
@@ -182,14 +193,14 @@ nav a:hover {
 }
 
 .hero__btn {
-    position: relative;
-    margin-right: 15rem;
-    margin-top: -2.5rem;    
-    margin-bottom: 1rem;    
-    top: -1rem;
-    left: -5rem;
+    display: flex;
+    margin-right: 20rem;   
 }
-*/
+
+.hero__btn button {
+    padding: 1rem 5.5rem;
+}
+
 
 /*******
 MAIN
@@ -200,10 +211,9 @@ main {
     flex-direction: column;
 }
 
-
-/********** 
-backstage 
-**********/
+/**************** 
+section backstage 
+****************/
 
 .backstage {    
     display: flex;
@@ -235,9 +245,9 @@ backstage
     margin-top: 2.3rem;
 }
 
-/******
-pets 
-******/
+/***********
+section pets 
+***********/
 
 .pets__container {
     
@@ -269,7 +279,11 @@ pets
     grid-row: 2/3;
 }
 
- .left {
+.arrows {
+    display: flex;
+}
+
+.left {
     grid-column: 1/2;
     grid-row: 1/3;
     align-self: center;
@@ -304,14 +318,12 @@ pets
     padding: 1rem 3rem;  
 }
 
-
 .pets {
     display: flex;     
     flex-wrap: wrap;
     justify-content: center;          
     gap: 2em;       
 }
-
 
 .pets__cards {
     border: 1px solid #FE9013;
@@ -360,79 +372,63 @@ figcaption {
     color: #000000;
 }
 
+/**************
+section friends
+**************/
 
-
-/* SECTION THREE */
-
-.three {    
+.friends {    
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%,
                  #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), 
                  linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, 
                  rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), 
                  linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, 
                  rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    padding: 5em 14em;
+    padding: 0;
+    margin: 0;
     display: flex;    
     flex-direction: column;
     align-content: center;
 }
 
-
 .friend { 
-
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    padding: 2em 2em;
+    padding: 0;
+    margin: 5rem 14rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: left;    
 }
 
 .friend h2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 120%;
-    text-align: center;
     color: #FE9013;
-    margin: 0;   
-    margin-bottom: 1em;
-       
+    text-align: center;
+    margin: 2rem 0;       
 }
 
-.friend h4 {    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-    color: #333B41;    
-    padding-left: 63px;
-    margin: 0;
-    margin-bottom: 1.5em;
+.friend h4 {        
+    color: #333B41; 
+    margin: 0 6rem;
+  
 }
 
-.friend p {
-    font-style: normal;    
-    font-size: 16px;
-    line-height: 130%;
-    color: #333B41;
-    margin: 0;
-    padding-left: 63px;
-    margin-bottom: 1em;    
+.friend p {   
+    color: #333B41;           
 }
 
-.friend p a {
+.friend a {
     color: orange; 
 }
 
 .friend .p1 {
-    font-weight: 500;   
+    font-weight: 500;
+    margin: 2.5rem 0 0 6rem;   
 }
 
 .friend .p2 {
     font-weight: 400;   
-    margin-right: 198px;
+    margin: 0.5rem 10rem 0 6rem;    
 }
 
 .friend h3 {
@@ -442,25 +438,25 @@ figcaption {
     text-align: center;
     line-height: 130%;
     color: #333B41;
+    margin: 4rem 0 3rem;
 }
 
 .cards {
     display: flex;
-    justify-content: space-evenly;         
-    padding: 0 10em;
-    margin: 0;    
+    justify-content: space-between;             
+    margin: 0 12rem;    
 }
 
 .card {
     margin: 0;
     padding: 0;
-    width: 168px; 
-    height: 244px;
+    width: 10.5rem; 
+    height: 15.25rem;
 }
 
 .card__img {
-    width: 168px; 
-    height: 168px;
+    width: 10.5rem; 
+    height: 10.5rem;
     background-color: white;
     border: 1px solid #F9804B;
     border-radius: 5px;       
@@ -472,20 +468,17 @@ figcaption {
 }
 
 .cards figcaption {
-    margin: 1.8em 0;
+    margin: 1.5em 0;
     padding: 0;
 }
 
 .arrow {
-    margin: auto;
-    padding: 1em;
-    position: relative;
-    top: -42px;
+    margin: 3.5rem auto;        
 }
 
 .friends__btn {
     position: relative;      
-    margin: 3em auto;
+    margin: 3em auto 4rem;
 }
 
 .friends__btn button {
@@ -493,15 +486,15 @@ figcaption {
 }
 
 
-/* SECTION FOUR */
-
-/* testimonials */
+/******************* 
+section testimonials
+*******************/
 
 .testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7em 14em 11em;
+    padding: 6em 14em 11em;
     margin: 0;
     background-color: peachpuff;
     background: url(../../assets/images/leav_foto.png);
@@ -511,12 +504,13 @@ figcaption {
     background-position-y: 130%; 
 }
 
-.testimonials h3 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 130%;
-    text-align: center;
-    color: #333B41;       
+.testimonials__title {
+    margin: 1rem;
+}
+
+.testimonials__title h3 {    
+    font-size: 2.25rem;  
+    text-align: center;    
 }
 
 .testimonials__content {
@@ -525,115 +519,66 @@ figcaption {
     gap: 2em;    
 }
 
-
-.module-border-wrap {
-    padding: .2em;    
-    margin: 0;
-    background:  repeating-linear-gradient(
-        rgba(254, 189, 171, 0.74),
-        rgba(243, 169, 248, 0.66),
-        rgba(224, 216, 240, 1),
-        rgba(234, 247, 254, 1),
-        rgba(234, 247, 254, 1)       
-    ); 
-    border-radius: 20px;     
-}
-
-
-.testimonials__h3 {
-    margin-bottom: 1em;
-}
-
-.testimonials__card {       
-    background: #F1F3F2;     
-    border-radius: 20px;     
+.testimonials__card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    max-height: 24rem;
+    max-height: 24rem; 
+    padding: 0 .5rem;    
+    background: #F1F3F2;   
+    border-radius: 20px;  
+    border-style: solid;  
+    border-top-color: rgba(254, 189, 171, 0.74);
+    border-right-color: rgba(243, 169, 248, 0.66); 
+    border-bottom-color: rgba(224, 216, 240, 1);
+    border-left-color: rgba(234, 247, 254, 1);    
 }
 
-
-.testimonials__card__title {
-    display: flex;    
-    flex-basis: 100%; 
-    gap: .5rem;
-    padding: .5rem
+.card_title {     
+     display: flex;    
+     padding: 0;
+     margin: 1rem .5rem 0rem;
+     gap: .5rem;
+     align-items: center;          
 }
 
-.testimonials__card__title p {
+.card_title > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card__title__img {
+    align-self: center;
+}
+
+.card__title__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__title__content > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card__title__content .name {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+}
+
+.card__title__content .location {
     font-size: .9rem;
+    font-weight: 300;
 }
 
-.testimonials__card__title__text {
-    display: flex;    
-    flex-wrap: wrap;    
-    flex-grow: 1;
+.card__title__content .time {
+    font-size: .9rem;
+    font-weight: 300;
 }
-
-.testimonials__card__text {
-    padding: 0 .3rem;
-}
-
-.testimonials__card__text p {
-    margin: 0;
-}
-
-.testimonials__card__title__text:last-child {
-    margin-left: auto;
-}
-
-.testimonials__card__title__name {
-    width: 100%;     
-    font-size: larger;    
-}
-
-.testimonials__card__title__name h5 {
-    margin: 0;
-    padding: 0;
-}
-
-.testimonials__card__title__location p {
-    margin: 0;
-    padding: 0;
-}
-
-.testimonials__card__title__time {
-    margin-left: .5rem;
-}
-
-.testimonials__card__title__time p{
-    margin: 0;
-    padding: 0;    
-}
-
-/*
-.testimonials__slider {
-    position: relative;    
-    margin: 1.5em 0;    
-    width: 50%;    
-    background:  linear-gradient(to right,
-        rgba(254, 189, 171, 0.74),
-        rgba(243, 169, 248, 0.66),
-        rgba(224, 216, 240, 1),
-        rgba(234, 247, 254, 1),
-        rgba(234, 247, 254, 1)       
-    ); 
-    border-radius: 20px;
-}
-
-.testimonials__slider input {
-    width: 99.5%;
-    background-color: white;
-    border-radius: 20px;
-    margin: 2px;
-    color: orange; 
-}
-*/
 
 .testimonials__slider {
-    width: 50%;
-    margin: 1.5em auto;
+    width: 52%;
+    margin: 1rem auto;
 }
 
 .testimonials__slider input {
@@ -646,33 +591,52 @@ figcaption {
     cursor: pointer;   
 }
 
-.testimonials-btn {
-    position: relative; 
-    align-self: flex-start;;   
-    border-radius: 0;
+.testimonials-btn {   
+     align-self: flex-start;
 }
+
+.testimonials-btn button {
+    border-radius: 0px;
+}
+
 
 /*******
 FOOTER 
 ********/
 
-
 footer {
     display: flex;
     flex-direction: column;
-    padding: 2em 14em 3em;
+    padding: 4rem 0;
+    margin: 0;
     background: black;
-    gap: 3em;
+    gap: 2em;
 }
 
 .footer__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 14rem;
 }
 
 .footer__logo {
-    color: white;
+    display: flex;
+    align-items: center;
+    width: 5.125rem;
+    height: 3.25rem;
+    border: .5px solid #fff;    
+    background: url(../../assets/images/bamboo.svg) no-repeat;    
+    background-position: 17% 65%; 
+}
+
+.footer__logo h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #FFF;
 }
 
 .form__h2 {
@@ -687,6 +651,7 @@ footer {
     display: flex;
     flex-grow: 1;
     align-items: flex-end;
+    margin: 0 14rem;
 }
 
 .footer__bottom > * {
@@ -741,9 +706,13 @@ footer {
     margin: 0;
 }
 
+.footer_btn {
+    margin-left: 14rem;
+}
+
 .footer_btn button {
     border-radius: 5px;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem;    
 }
 
 .nav__logo h2 {
@@ -800,6 +769,8 @@ form .submit:hover {
 }
 */
 
+/*
+
 @media only screen and (max-width: 1600px) and (min-width: 1000px) {
     .container {
         max-width: 1600px;
@@ -818,7 +789,7 @@ form .submit:hover {
         
         background: url("../../assets/images/giant_panda.jpg") no-repeat;
         background-size: cover;     
-        background-position: 0% 60%;    
+        background-position: 0% 50%;    
         padding-top: 0;
         padding-bottom: 4.2rem;
         margin: 0;
@@ -830,10 +801,10 @@ form .submit:hover {
         align-items: center;
         background: url(../../assets/images/ellipse.png);
         background-repeat: no-repeat;  
-        background-size: 100%;                
-        background-position: 0%;
-        margin-top: 2rem;
-        margin-right: 11rem;
+        background-size: 70%;                
+        background-position: 5% 15%;
+        
+        margin-right: 10rem;
         
     }
     
@@ -858,21 +829,423 @@ form .submit:hover {
     
     .hero__btn {
         display: flex;
+        margin-right: 15rem;
        
     }
     
     
 }
+*/
 
-/*
-@media screen and (min-width: 1001px) and (max-width: 1599px) {
+
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
     .container {
-        max-width: 1500px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
-    .backstage__image, .backstage__text {
-        width: 100%;
+    .nav__logo {
+        margin-left: 3rem;
+    }
+
+    .nav__menu {
+        margin-right: 3rem;
+    }
+
+    .backstage {
+        padding: 9rem 2rem;
+        background: none;
+    }
+
+    .pets__image {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .arrows {        
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .pets__row2 {
+        grid-row: 3/4;
+    }
+
+    .pets__btn {
+        grid-row: 4/5;
+    }
+
+    .friend {
+        margin: 5rem 2rem 6rem;
+    }
+
+    .cards {
+        margin: 0 2.5rem;
+    }
+
+    .testimonials {
+        padding: 6rem 2rem 11rem;
+    }
+
+    .footer__top, .footer__bottom {
+        margin: 0 2rem;
+    }
+
+    .footer_btn {
+        margin-left: 2rem;
     }
 }
-*/
+
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .nav__logo {
+        margin-left: 2rem;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 3rem;
+    }
+
+    .hero__text {
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    .backstage {
+        padding: 5rem 2rem;
+    }
+
+    .backstage__image {
+        display: none;
+    }
+
+    .backstage__text {
+        width: 100%;
+    }
+
+    .pets__row1, .pets__row2 {
+        margin: 0 2rem;        
+        grid-column: 1/4;
+        gap: .6rem;
+    }
+
+    .pets__row1:last-child {
+        display: none;
+    }
+    
+    .pets__cards:first-of-type {
+        display: none;
+    }
+
+    .arrows {
+        grid-row: 2/3;
+    }
+
+    .pets__row2 {
+        grid-row: 3/4;
+    }
+
+    .pets__btn {
+        grid-row: 4/5;
+    }
+
+    .pets__image {
+        width: 17.8rem;
+        height: 20.75rem;
+    }
+
+    .friend {
+        margin: 2rem;
+    }
+
+    .cards {
+        margin: 0 2rem;
+        gap: .5rem;
+    }
+
+    .card {        
+        width: 10.5rem;
+        height: 15.25rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /*testimonials*/
+    .testimonials {
+        padding:  2rem 2rem 6rem;
+    }
+    .testimonials__content {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials__card {
+        height: 10rem;
+    }
+    
+    .testimonials__card:last-of-type {
+        display: none;
+    }
+
+    .testimonials__slider {
+        display: none;
+    }
+
+    .testimonials-btn {
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    /*footer*/
+
+    footer {
+        position: relative;
+        padding: 2rem 0;
+    }
+
+    .nav__bottom {
+        justify-content: flex-start;
+    }
+    
+    .nav__menu__bottom {
+        justify-content: flex-start;
+        margin: 0;
+        gap: .5rem;
+    }
+    
+    .form {
+        display: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .footer__top, .footer__bottom {
+        margin: 0 2rem;
+    }
+
+    .footer_btn {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .nav__logo {
+        margin-left: 3rem;
+    }
+
+    .nav__menu {
+        margin-right: 3rem;
+    }
+
+    .backstage {
+        padding: 9rem 2rem;
+        background: none;
+    }
+
+    .pets__image {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .arrows {        
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .pets__row2 {
+        grid-row: 3/4;
+    }
+
+    .pets__btn {
+        grid-row: 4/5;
+    }
+
+    .friend {
+        margin: 5rem 2rem 6rem;
+    }
+
+    .cards {
+        margin: 0 2.5rem;
+    }
+
+    .testimonials {
+        padding: 6rem 2rem 11rem;
+    }
+
+    .footer__top, .footer__bottom {
+        margin: 0 2rem;
+    }
+
+    .footer_btn {
+        margin-left: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .nav__logo {
+        margin-left: 2rem;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 3rem;
+    }
+
+    .hero__text {
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    .backstage {
+        padding: 5rem 2rem;
+    }
+
+    .backstage__image {
+        display: none;
+    }
+
+    .backstage__text {
+        width: 100%;
+    }
+
+    .pets__container {
+        grid-template-columns: 1fr;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .pets__cards:first-of-type {
+        display: none;
+    }
+
+    .pets__row1 {
+        grid-column: 1/2;
+        flex-direction: column;
+    }
+
+    .pets__row2 {
+        grid-column: 1/2;
+        flex-direction: column;
+    }
+
+    .pets__btn {
+        margin: 0 2rem; 
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+   .pets__image {
+    width: fit-content;
+    height: fit-content;
+   }
+
+    .friend {
+        margin: 2rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0 2rem;
+        gap: .5rem;
+    }
+
+   
+
+    .arrow {
+        display: none;
+    }
+
+    /*testimonials*/
+    .testimonials {
+        padding:  2rem 2rem 6rem;
+    }
+    .testimonials__content {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials__card {
+        height: 10rem;
+    }
+    
+    .testimonials__card:last-of-type {
+        display: none;
+    }
+
+    .testimonials__slider {
+        display: none;
+    }
+
+    .testimonials-btn {
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    /*footer*/
+
+    footer {
+        position: relative;
+        padding: 2rem 0;
+    }
+
+    .footer__bottom {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .nav__bottom {
+        justify-content: center;        
+    }
+    
+    .nav__menu__bottom {
+        justify-content: flex-start;
+        margin: 0;
+        gap: .5rem;
+    }
+    
+    .form {
+        display: none;
+    }
+
+    .icons {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .footer__top, .footer__bottom {
+        margin: 0 2rem;
+    }
+
+    .footer_btn {
+        margin-left: 2rem;
+    }
+}
