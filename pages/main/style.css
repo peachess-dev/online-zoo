@@ -583,23 +583,38 @@ section testimonials
     font-weight: 300;
 }
 
+
 .testimonials__slider {
     width: 52%;
     margin: 1rem auto;
 }
 
-.testimonials__slider input {
-    border: 1px solid orange;
+input[type=range] {
+    width: 100%;
+    height: .5rem;
+    -webkit-appearance: none;    
+}
+  
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .6rem;
+    cursor: pointer;
+    background: #FFF;
+    border-radius: 11px;
+    border: 1px solid #E65A1E;
 }
 
-.testimonials__slider input[type="range"] {   
-    width: 100%; 
-    outline: none;        
-    cursor: pointer;   
+input[type=range]::-webkit-slider-thumb {
+    height: 100%;
+    width: 7rem;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: pointer;
+    -webkit-appearance: none;    
 }
 
 .testimonials-btn {   
-     align-self: flex-start;
+    align-self: flex-start;
 }
 
 .testimonials-btn button {
@@ -1112,7 +1127,16 @@ form .submit:hover {
         padding: 1rem 5rem;
     }
 
-    .footer__top, .footer__bottom {
+    /*footer */
+    footer {
+        padding: 3rem 0;
+    }
+
+    .footer__top {
+        margin: 0 4rem 0 2rem;
+    }
+    
+    .footer__bottom {
         margin: 0 2rem;
     }
 
