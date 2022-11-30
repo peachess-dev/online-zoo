@@ -603,7 +603,7 @@ section testimonials
 }
 
 .testimonials-btn button {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 
@@ -1060,15 +1060,56 @@ form .submit:hover {
 
     .cards figcaption {
         margin: 2rem 0;
-        line-height: 110;
+        line-height: 130%;
+    }
+
+    .arrow {
+        margin: 4rem auto;
     }
 
     .friends__btn {
         margin: 5rem auto 3rem;
     }
 
+    /*testimonials */
+
     .testimonials {
-        padding: 6rem 2rem 11rem;
+        padding: 3rem 2rem 5.5rem;
+    }
+
+    .testimonials__title {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .testimonials__content {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2em;    
+    }
+
+    .testimonials__card:last-of-type {
+        display: none;
+    }
+
+    .testimonials__card__text {
+        padding-bottom: 3rem;
+    }
+    .testimonials__card__text p {
+        font-size: .9rem;
+        margin: .3rem;
+        line-height: 120%;
+    }
+
+    .testimonials__slider {
+        margin-bottom: 0;
+    }
+
+    .testimonials-btn {
+        margin: 3rem 0;
+    }
+
+    .testimonials-btn button {
+        padding: 1rem 5rem;
     }
 
     .footer__top, .footer__bottom {
