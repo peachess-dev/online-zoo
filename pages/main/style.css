@@ -583,7 +583,6 @@ section testimonials
     font-weight: 300;
 }
 
-
 .testimonials__slider {
     width: 52%;
     margin: 1rem auto;
@@ -591,7 +590,7 @@ section testimonials
 
 input[type=range] {
     width: 100%;
-    height: .5rem;
+    height: .5rem;    
     -webkit-appearance: none;    
 }
   
@@ -664,22 +663,17 @@ footer {
 .form__h2 {
     color: #FFF;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;    
-    margin: 0;
+    font-size: 1.5rem;    
 }
 
 .footer__bottom {
     display: flex;
     flex-grow: 1;
     align-items: flex-end;
-    margin: 0 14rem;
+    margin: 1rem 14rem;
 }
 
-.footer__bottom > * {
-    padding: 0;
-    margin: 0;
-}
+
 
 .icons {
     color: #FFF;
@@ -687,27 +681,33 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     gap: .7em;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
 }
 
 .icons > a {
     display: flex;    
-    gap: .5em;
+    gap: .5em;    
 }
 
 .icons > a:hover {
     color: orange;
 }
 
+.icons i {
+    font-size: 1.5rem;
+}
+
 .nav__bottom {
+    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .nav__menu__bottom {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 3em;
     margin: 0;
 }
@@ -1116,7 +1116,18 @@ form .submit:hover {
     }
 
     .testimonials__slider {
+        width: 44%;
         margin-bottom: 0;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: .5rem;        
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        height: 100%;
+        width: 5rem;           
     }
 
     .testimonials-btn {
@@ -1137,7 +1148,7 @@ form .submit:hover {
     }
     
     .footer__bottom {
-        margin: 0 2rem;
+        margin: 1rem 2rem;
     }
 
     .footer_btn {
