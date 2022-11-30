@@ -4,19 +4,21 @@
 TYPOGRAPHY
 **********/
 
+:root {
+    font-family: 'Roboto', sans-serif; 
+}
+
 body {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.container {
-    max-width: 1600px;
-    display: flex;    
-    flex-direction: column;     
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;  
+.container {       
+    margin: 0;
+    padding: 0;     
 }
 
 a {
@@ -80,11 +82,7 @@ button:hover {
 HEADER
 **********/
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;         
-}
+
 
 /* navigation */
 
@@ -92,7 +90,7 @@ nav {
     display: flex;    
     flex-grow: 1;
     align-items: center;
-    padding: 0.8rem 0;    
+    padding: 0.8rem 14rem;    
     gap: 1rem;
     background: black;   
     color: white;   
@@ -105,8 +103,8 @@ nav {
     height: 3rem;
     border: .5px solid #fff;    
     background: url("../../assets/images/bamboo.svg") no-repeat;    
-    background-position: 10% 65%;    
-    margin-left: 14rem;
+    background-position: 10% 65%; 
+    
 }
 
 .nav__logo h1 {
@@ -122,8 +120,7 @@ nav {
     flex-wrap: wrap;
     flex-grow: 1;       
     margin-left: auto;
-    gap: 3.7rem;
-    margin-right: 14rem;
+    gap: 3.7rem;    
 }
 
 .nav__menu ul {
@@ -172,7 +169,7 @@ nav a:hover {
     background: url(../../assets/images/ellipse.png);
     background-repeat: no-repeat;  
     background-size: 70%;                
-    background-position: 5% 15%;    
+     
     margin-right: 10rem;
     padding: 5rem;    
 }
@@ -1162,21 +1159,49 @@ form .submit:hover {
         max-width: 640px;
     }
 
+    /*nav */
+    nav {
+        padding: .1rem 0
+    }
+
     .nav__logo {
-        margin-left: 2rem;
+        margin-left: 1rem;  
+        width: 3rem;
+        height: 2rem;   
+        border: none;   
+    }
+
+    .nav__logo h1 {
+        font-size:.8rem;
     }
 
     .nav__menu {
         display: none;
     }
 
+    /*hero */
     .hero {
+        
         padding-bottom: 3rem;
     }
 
     .hero__text {
-        margin-right: 0;
+        margin-right: 1rem;
+        margin-top: 1rem;
         padding: 1rem;
+        background-size: 80%; 
+    }
+
+    .hero__text__content {
+        margin-top: 1rem;
+        padding: 1rem
+        
+        
+    }
+
+    .hero__text p {
+        font-size: 3.5rem;   
+        
     }
 
     .backstage {
