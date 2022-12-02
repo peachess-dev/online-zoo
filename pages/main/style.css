@@ -9,19 +9,66 @@ TYPOGRAPHY
 }
 
 body {
+    box-sizing: border-box;
+
+}
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
-
-.container {     
-    padding: 0;    
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1600px;
+section {
     position: relative;
+    
+}
+
+.container {
+    position:relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     overflow: hidden;
 }
+
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    .container {
+        max-width: 2600px;
+    }
+}
+    
+
+
 
 a {
 text-decoration: none;
@@ -60,14 +107,16 @@ HEADER
 **********/
 
 /* navigation */
+nav .container {
+    background: black;   
 
+}
 .nav {
     display: flex;    
     flex-grow: 1;
     align-items: center;
-    padding: .9rem 14rem;
+    padding: .9rem;
     gap: 1rem;
-    background: black;   
     margin: 0;
 }
 
@@ -124,32 +173,54 @@ HEADER
 /* hero */
 
 
-.hero__container {
-   
-       
-    padding-bottom: 6.5rem;
-    margin: 0;
+
+.hero {
+   /* height: 780px; */
+   position: relative;
+
 }
 
 .hero__container__bgimage {
     position: absolute;
     width: 100%;
-    top: -30%;
-    
+    height: 100%;    
 }
+
 
 .hero__container__bgimage img {
     width: 100%;
+    height: 100%;
+    /* max-height: 780px; */
+    object-fit: cover;
+    /* object-position: 50% 75%; */
+    overflow:hidden;
+    
 }
 
+.hero.container {
+    padding: 3rem;
+    display: flex;
+}
 
+.hero__text__bgimage img {
+    width: 100%;
+}
+
+.hero__text__bgimage {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    object-fit: cover;
+}
+
+.hero__text__container {
+    margin-left: auto;  
+    padding-right: 3rem;
+    z-index: 99;
+}
 
 .hero__text {
-    position: relative;    
-    left: 51%;
-    max-width: min-content;        
-    background: url("../../assets/images/ellipse.png") no-repeat;
-    padding: 5rem;    
+    margin-bottom: 3.5rem;
 }
 
 .hero__text p {
@@ -160,8 +231,7 @@ HEADER
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 1px 1px grey;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .hero__text p span {
@@ -169,8 +239,8 @@ HEADER
 }
 
 .hero__btn {
-    position: relative;
-    left: 61%;
+    position: absolute;
+    left: 20%;
 }
 
 
@@ -179,34 +249,34 @@ HEADER
 /*******
 MAIN
 *******/
-
+main {
+    position: relative;
+}
 
 /**************** 
 section backstage 
 ****************/
 
-.backstage__container {    
-    display: flex;
-    margin: 0 auto;
-    padding: 9rem 14rem;
-    gap: 8%;   
-    position: relative;
-    
-}
+
 
 .backstage__bgimage {
     position: absolute;
-    top: 1.1%;
-    left: 87%;    
+    top: 0%;
+    right: 0%;    
+    max-width: 20%;
 }
 
-.backstage__bgimage img {
-    max-width: 140%;   
+
+.backstage__flex {
+    display: flex;
+    gap: 5%; 
+    overflow: hidden;   
 }
 
 .backstage__image {    
     width: 52%;
-    object-fit: cover;    
+    object-fit: cover;  
+    margin: 2rem 0;  
 }
 
 .backstage__image img {
@@ -217,6 +287,7 @@ section backstage
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin: 2rem 0;  
 }
 
 .backstage__text h3 {
@@ -231,7 +302,7 @@ section pets
     display: grid;  
     align-items: center;
     grid-template-columns: .5fr 2fr 2fr .5fr;
-    padding: 1rem 4rem;
+    padding: 1rem 0;
     gap: 1rem;
     position: relative;
 }
@@ -253,7 +324,7 @@ section pets
 .pets__container__bgimage2 {
     position: absolute;
     bottom: 0%;
-    left: 77%;
+    right: 0%;
 }
 
 .pets__row1 {
@@ -376,7 +447,8 @@ section friends
 
 .friends .container {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    opacity: 0.9;       
+    opacity: 0.9;     
+    padding: 6rem 0;  
 }
 
 .friends__container {
@@ -385,8 +457,8 @@ section friends
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 5rem 14rem 6rem;
-    padding: 2rem 4rem 2rem 6rem;    
+    
+    margin: 0 6rem;    
 }
 
 .friends__container h2, h3 {
@@ -496,19 +568,16 @@ section testimonials
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6em 14em 11em;
+    padding: 6em 0;
     margin: 0;   
 }
 
 .testimonials__bgimage {
     position: absolute;
-    bottom: -15%;
-    left: 85%;
+    top: 70%;
+    right: 0%;
 }
 
-.testimonials__bgimage {
-    width: 100%;
-}
 
 .testimonials__title {
     margin: 1rem;
@@ -625,11 +694,14 @@ input[type=range]::-webkit-slider-thumb {
 /*******
 FOOTER 
 ********/
+footer .container{
+    background: #000000;
+}
 
 .footer__container {
     display: flex;
     flex-direction: column;
-    padding: 2rem 14rem;
+    padding: 2rem;
     margin: 0;
     background: black;
     gap: 2em;
@@ -946,6 +1018,10 @@ form .submit:hover {
 
     .hero__container {
         padding-bottom:  .5rem;
+    }
+
+    .hero__text {
+        
     }
 
     .hero__text p {
