@@ -30,47 +30,6 @@ section {
     overflow: hidden;
 }
 
-
-@media screen and (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .container {
-        max-width: 1150px;
-    }
-}
-
-@media screen and (min-width: 3600px) {
-    .container {
-        max-width: 2600px;
-    }
-    
-}
-    
-
-
-
 a {
 text-decoration: none;
 color: #FFF;
@@ -832,314 +791,62 @@ form .submit:hover {
 
 /* media queries */ 
 
-/*
-@media (max-width: 320px) {
+
+
+@media screen and (min-width: 320px) {
     .container {
-        min-width: 320px;
+        max-width: 320px;
     }
 }
 
-@media (max-width: 640px) {
+@media screen and (min-width: 640px) {
     .container {
-        min-width: 640px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {min-width: 1000px};
-}
-
-
-@media (max-width: 1600px) {
-    .container {max-width: 1600px;}
-}
-*/
-
-/*
-
-@media only screen and (max-width: 1600px) and (min-width: 1000px) {
-    .container {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-
-    nav {
-        padding: .9rem 2rem;
-    }
-
-    .hero {
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        align-items: flex-end; 
-        
-        background: url("../../assets/images/giant_panda.jpg") no-repeat;
-        background-size: cover;     
-        background-position: 0% 50%;    
-        padding-top: 0;
-        padding-bottom: 4.2rem;
-        margin: 0;
-    }
-    
-    .hero__text {
-        display: flex;  
-        flex-direction: column;       
-        align-items: center;
-        background: url(../../assets/images/ellipse.png);
-        background-repeat: no-repeat;  
-        background-size: 70%;                
-        background-position: 5% 15%;
-        
-        margin-right: 10rem;
-        
-    }
-    
-    .hero__text p {
-        margin: 0;   
-        font-weight: 700;
-        font-size: 5rem;    
-        line-height: 75%;         
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 1px 1px grey;
-        position: relative;
-        
-       
-       
-    }
-    
-    .hero__text p span {
-       color: #FFEE2E;
-    }
-    
-    
-    .hero__btn {
-        display: flex;
-        margin-right: 15rem;
-       
-    }
-    
-    
-}
-*/
-
-/*
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .nav__logo {
-        margin-left: 3rem;
-    }
-
-    .nav__menu {
-        margin-right: 3rem;
-    }
-
-    .backstage {
-        padding: 9rem 2rem;
-        background: none;
-    }
-
-    .pets__image {
-        width: 18rem;
-        height: 22rem;
-    }
-
-    .arrows {        
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-
-    .pets__row2 {
-        grid-row: 3/4;
-    }
-
-    .pets__btn {
-        grid-row: 4/5;
-    }
-
-    .friend {
-        margin: 5rem 2rem 6rem;
-    }
-
-    .cards {
-        margin: 0 2.5rem;
-    }
-
-    .testimonials {
-        padding: 6rem 2rem 11rem;
-    }
-
-    .footer__top, .footer__bottom {
-        margin: 0 2rem;
-    }
-
-    .footer_btn {
-        margin-left: 2rem;
-    }
-}
-*/
-
-
-@media screen and (min-width: 1000px) and (max-width: 1599px) {
-    .container {
-        max-width: 1000px;
-    }
-
-    /*nav*/
-
-    .nav {
-        padding: 0.9rem 2rem;
-    }
-
-    .nav__menu {
-        gap: 3.1rem;
-    }
-
-    /*hero*/
-
-    .hero__container {
-        padding-bottom:  .5rem;
-    }
-
-    .hero__text {
-        
-    }
-
-    .hero__text p {
-        font-size: 5.325rem;
-    }
-
-    /*backstage*/
-
-    .backstage__container {
-        padding: 4rem 2rem;
-        gap: 3%;
-    }
-
-    .backstage__bgimage {
-        display: none;
-    }
-
-    .backstage__image {
-        width: 100%;        
-    }
-
-    .backstage__text {
-        width: 100%;       
+        max-width: 639px;
     }
 
     .pets__container {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 4.5rem 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        
     }
 
-    /*pets*/
-    
-    .pets__container__bgimage1 .palm_foto1 {
-        display: none;
+    .pets__cards {
+        width: 17.8rem;
     }
-
-    .pets__container__bgimage1 .palm_foto2 {
-        display: block;
-    }
-
-    .pets__container__bgimage1 {
-        bottom: 0%;
-        left: 0%;
-    }
-
-    .pets__container__bgimage1 img {
-        width: 100%;
-    }
-
-    .pets__container__bgimage2 {
-        bottom: 0%;
-        left: 77%;
-    }
-
-    .pets__container__bgimage2 img {
-        width: 100%;
-    }
-
-    .pets__row1 {
-        grid-column: 1/5;
-    }
-
-    .pets__row2 {
-        grid-column: 1/5;
-        grid-row: 3/4;
-    }
-
-    .left {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        justify-self: center;
-    }
-
-    .right {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        justify-self: center;
-    }
-
-    .pets__row1 .gorillas {
-        display: none;
-    }
-
-    .pets__row1 .tigers {
-        display: block;
-    }
-
-    .pets__row2 .sloth {
-        display: none;
-    }
-    .pets__row2 .gorillas {
-        display: block;
-    }
-
-    .pets__row2 .tigers {
-        display: none;
-    }
-
-    .pets__row2 .alligators {
-        display: block;
-    }
-
-    .pets__btn {
-        grid-row: 4/5;
-    }
-
-    .friends__container {
-        margin: 1rem 2rem;
-        padding: 2rem 1rem 0 3rem;             
-    }
-
-    .friends__container h4 {
-        margin: 1rem 0;
-    }
-
-    .friends__container p {
-        margin: 0 0 1rem;
-    }
-
-    .cards {
-        margin: .2rem;
-    }
-
-
-    .friends__btn {
-        margin:  5rem auto 3rem;
-    }
-
-   /*footer*/
-
-   .footer__container {
-    padding: 2rem;
-   }
-
-   
 }
+
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 999px;
+    }
+
+    .pets .container {
+        overflow: hidden;
+    }
+
+    .pets__cards {
+        width: 18.43rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+@media screen and (min-width: 3600px) {
+    .container {
+        max-width: 2600px;
+    }
+    
+}
+    
+
