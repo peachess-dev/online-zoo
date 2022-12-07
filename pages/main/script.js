@@ -7,22 +7,22 @@ alert(
 const burgerMenu = document.querySelector(".nav__burger");
 const navMenu = document.querySelector(".nav__menu");
 const hero = document.querySelector(".hero");
+const shadow = document.querySelector("#shadow");
 
 burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
   navMenu.classList.toggle("active");
-  document.getElementById("shadow").style.background = "#000";
-  document.getElementById("shadow").style.opacity = 0.5;
+  shadow.classList.toggle("active");
 });
 
-window.addEventListener("mouseup", function (e) {
+window.addEventListener("click", (e) => {
   if (
-    !document.querySelector(".nav__burger").contains(e.target) &&
-    !document.querySelector(".nav__menu").contains(e.target)
+    navMenu.classList.contains("active") &&
+    !burgerMenu.contains(e.target) &&
+    !navMenu.contains(e.target)
   ) {
-    document.getElementById("shadow").style.background = "none";
-    document.getElementById("shadow").style.opacity = 1;
+    burgerMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    shadow.classList.toggle("active");
   }
 });
-
-window.addEventListener("load", showBurgerMenu);
