@@ -1,3 +1,28 @@
+// show and hide burger menu
+
+const burgerMenu = document.querySelector(".nav__burger");
+const navMenu = document.querySelector(".nav__menu");
+const hero = document.querySelector(".hero");
+const overlay = document.querySelector(".overlay");
+
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+window.addEventListener("click", (e) => {
+  if (
+    navMenu.classList.contains("active") &&
+    !burgerMenu.contains(e.target) &&
+    !navMenu.contains(e.target)
+  ) {
+    burgerMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+});
+
 // make another amount field equal to amount field value
 
 const amount = document.querySelectorAll(".amount");
